@@ -1,3 +1,4 @@
+import { Button } from '@mui/material';
 import React from 'react';
 
 export function MyGreenButton({
@@ -7,9 +8,7 @@ export function MyGreenButton({
 	...props
 }) {
     return (
-       <button className={className} style={{backgroundColor: 'green'}}
-         {...props}> 
-            {children}
-       </button>
+       <Button className={className} style={{backgroundColor: 'green'}}
+         {...props}>{children}</Button>
     )
  }
