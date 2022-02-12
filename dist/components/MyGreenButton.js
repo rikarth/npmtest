@@ -7,6 +7,8 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.MyGreenButton = MyGreenButton;
 
+var _material = require("@mui/material");
+
 var _react = _interopRequireDefault(require("react"));
 
 const _excluded = ["disabled", "className", "children"];
@@ -27,10 +29,10 @@ function MyGreenButton(_ref) {
   } = _ref,
       props = _objectWithoutProperties(_ref, _excluded);
 
-  return /*#__PURE__*/_react.default.createElement("button", _extends({
+  return /*#__PURE__*/_react.default.createElement(_material.Button, _extends({
     className: className,
     style: {
-      backgroundColor: 'green'
+      backgroundColor: 'lightgreen'
     }
   }, props), children);
 }

@@ -8,7 +8,7 @@ export function MyGreenButton({
 	...props
 }) {
     return (
-       <Button className={className} style={{backgroundColor: 'green'}}
+       <Button className={className} style={{backgroundColor: 'lightgreen'}}
          {...props}>{children}</Button>
     )
  }
